@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poiret One", cursive;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- HEADER */
+.title-space-v {
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .title-space-v {
+    line-height: 1.8rem;
+    margin: 0;
+  }
+}
+.redes {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+.redes img {
+  height: 3em;
+}
+
+@media (min-width: 992px) {
+  .redes {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .redes img {
+    height: 3em;
+  }
+}
+@media (min-width: 992px) {
+  .alinear-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------BODY INDEX */
+.bck-img {
+  background-image: url(../images/pexelsanna.jpg);
+  background-position-y: 60%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------------------------CONTENEDORES UNIVERSALES */
+.body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.space-container {
+  height: 100%;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------MAIN INDEX */
+.main-contain {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main-contain h2 {
+  font-size: 5rem;
+  font-weight: bold;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+.main-contain h3 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .main-contain h2 {
+    font-size: 8rem;
+    font-weight: bold;
+    -ms-writing-mode: tb-lr;
+    writing-mode: horizontal-tb;
+    text-orientation: upright;
+  }
+  .main-contain h3 {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+}
+@media (min-width: 992px) {
+  .main-contain h2 {
+    font-size: 10rem;
+    font-weight: bold;
+    -ms-writing-mode: tb-lr;
+    writing-mode: horizontal-tb;
+    text-orientation: upright;
+  }
+  .main-contain h3 {
+    font-size: 7rem;
+    font-weight: bold;
+  }
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------MAIN STORES */
+.main-stores {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #f7f7f7;
+}
+
+@media (min-width: 992px) {
+  .title-store {
+    height: 80%;
+    width: 100%;
+    background-image: url(../images/img17-ubicaciontiendas.jpg);
+    color: #040f0f;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1em;
+  }
+}
+@media (min-width: 1400px) {
+  .title-store {
+    height: 80%;
+    width: 100%;
+    background-image: url(../images/img17-ubicaciontiendas.jpg);
+    color: #040f0f;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 30%;
+    padding-top: 1em;
+  }
+}
+@media (min-width: 992px) {
+  .main-stores {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .tiendas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1em;
+  }
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------BODY STORES */
+.bck-img-st {
+  background-image: linear-gradient(to bottom, #f7f7f7, #dbdce0, #bec2c9, #9fa9b2, #80919b, #6a7e86, #566b71, #42585c, #334547, #243234, #172121, #040f0f);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------MAIN STORES */
+.main-contactame {
+  height: 100%;
+}
+
+.formulario {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------BODY STORES */
+.bck-img-coll {
+  background-color: #f9f9f9;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------MAIN TIENDAS HOMBRE Y MUJER */
+/* .main-stores{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #f7f7f7;
+}
+ */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+}
+.grid-items {
+  width: 100%;
+  background-color: white;
+}
+.grid-items img {
+  width: 100%;
+}
+
+.scale {
+  transform: scale(0.9);
+}
+
+@media (min-width: 768px) {
+  .scale {
+    transform: scale(0.95);
+  }
+}
+.free-ship {
+  color: #ffffff;
+  font-weight: 400;
+  background-color: #767676;
+  border-radius: 0.5rem;
+  width: 6em;
+  text-align: center;
+}
+
+.precio {
+  color: red;
+  font-weight: bold;
+}
+
+.tc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tc img {
+  width: 1em;
+  height: 1em;
+}
+.tc p {
+  font-size: 0.8rem;
+}/*# sourceMappingURL=styles.css.map */
